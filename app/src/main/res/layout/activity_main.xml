@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".UserAuth.MainActivity">
+
+    <ImageView
+        android:layout_above="@id/etEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/img"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_above="@id/etPass"
+        android:layout_width="300sp"
+        android:layout_height="50sp"
+        android:layout_marginBottom="5sp"
+        android:background="@color/white"
+        android:hint="Email"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/etPass"
+        android:layout_width="300sp"
+        android:layout_height="50sp"
+        android:layout_marginBottom="5sp"
+        android:background="@color/white"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_below="@id/etPass"
+        android:layout_width="300sp"
+        android:layout_height="50sp"
+        android:text="Login"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/txtCreateUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnLogin"
+        android:text="Create new user"
+        android:textStyle="bold"
+        android:layout_marginTop="10sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Aashay Pawar \u00A9 2024 Apicon Apps"
+        android:layout_marginBottom="10sp"/>
+
+</RelativeLayout>

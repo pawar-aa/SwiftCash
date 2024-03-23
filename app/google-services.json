@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "450719388555",
+    "project_id": "swiftcash-390a6",
+    "storage_bucket": "swiftcash-390a6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:450719388555:android:32f6404654d6061c01158e",
+        "android_client_info": {
+          "package_name": "com.example.swiftcash"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApyPCSOcIoras-5S7TlpRo-kzp224kPSU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
