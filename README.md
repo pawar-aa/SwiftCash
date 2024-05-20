@@ -1,17 +1,24 @@
 # SwiftCash Android App
 
+<p align="center">
+   
 ![App Logo](https://github.com/pawar-aa/SwiftCash/blob/main/app/src/main/res/drawable/img.png)
-<br>
-Developed in:
-<br>
-<img src="https://images.vexels.com/media/users/3/139556/isolated/preview/1718a076e29822051df8bcf8b5ce1124-android-logo.png" height="50"> 
-<img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Kotlin_Icon.png" height="50"> 
-<img src="https://firebase.google.com/static/downloads/brand-guidelines/PNG/logo-knockout.png" height="50">
 
-
-
+</p>
 
 SwiftCash is an Android application that enables users to register accounts securely and transfer money between accounts seamlessly.
+
+<p align="center">
+  <img src="https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34" alt="Firebase">
+  <img src="https://img.shields.io/badge/android%20studio-346ac1?style=for-the-badge&logo=android%20studio&logoColor=white" alt="Android Studio">
+  <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+  <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android">
+  <img src="https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite">
+  <img src="https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin">
+</p>
+
+<img src="https://github.com/pawar-aa/assets/blob/main/SwiftCashMockups.png"> 
+
 
 ## Features
 
