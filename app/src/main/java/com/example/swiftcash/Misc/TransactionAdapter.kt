@@ -33,11 +33,11 @@ class TransactionAdapter(private var transactions: List<Transactions>) : Recycle
 
         if (transaction.senderID == FirebaseAuth.getInstance().currentUser?.email) {
             holder.textViewType.text = "Got"
-            holder.textViewType.setTextColor(Color.parseColor("#00FF00"))
+            holder.textViewType.setTextColor(Color.parseColor("#1b263b"))
             holder.textViewUserID.text = transaction.receiverID
         } else {
             holder.textViewType.text = "Sent"
-            holder.textViewType.setTextColor(Color.parseColor("#FF0000"))
+            holder.textViewType.setTextColor(Color.parseColor("#778da9"))
             holder.textViewUserID.text = transaction.senderID
         }
     }

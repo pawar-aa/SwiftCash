@@ -19,6 +19,7 @@ import com.google.firebase.firestore.FirebaseFirestore
 
 class UserActivity : AppCompatActivity() {
     private lateinit var userBalanceTextView: TextView
+    private lateinit var userTransactions: TextView
     private lateinit var recyclerViewTransactions: RecyclerView
     private lateinit var transactionAdapter: TransactionAdapter
     private lateinit var autoCompleteTextView: AutoCompleteTextView
@@ -55,6 +56,7 @@ class UserActivity : AppCompatActivity() {
         autoCompleteTextView.setAdapter(adapter)
 
         userBalanceTextView = findViewById(R.id.user_balance)
+        userTransactions = findViewById(R.id.user_trans)
         recyclerViewTransactions = findViewById(R.id.recyclerViewTransactions)
 
         recyclerViewTransactions.layoutManager = LinearLayoutManager(this)
@@ -136,6 +138,7 @@ class UserActivity : AppCompatActivity() {
                             }
                             transactionAdapter.updateTransactions(transactionList)
                         }
+                        userTransactions.text = transactionList.size.toString()
                     }
                 }
                 .addOnFailureListener { exception ->

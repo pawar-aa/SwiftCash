@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_background"
+    android:background="#778da9"
     tools:context=".UserActivity.SendActivity">
 
     <TextView
         android:id="@+id/sendUser"
         android:layout_above="@id/sendAmount"
         android:text="Send amount to"
+        android:textSize="30sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"/>
@@ -25,10 +26,11 @@
         android:inputType="number"
         android:textSize="50sp" />
 
-    <Button
+    <ImageView
         android:id="@+id/sendButton"
-        android:text="Send"
+        android:src="@drawable/ic_send"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
         android:layout_below="@id/sendAmount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>

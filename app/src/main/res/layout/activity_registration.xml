@@ -4,53 +4,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_background"
+    android:background="#e0e1dd"
     tools:context=".UserAuth.Registration">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true">
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="#1b263b"/>
 
         <EditText
             android:id="@+id/etEmail"
             android:hint="Email"
-            android:background="@color/white"
+            android:layout_marginTop="20sp"
             android:layout_marginBottom="5sp"
             android:layout_width="300sp"
-            android:layout_height="50sp"
-            android:layout_centerHorizontal="true"/>
+            android:layout_height="50sp"/>
 
         <EditText
             android:id="@+id/etPass"
             android:hint="Password"
             android:inputType="textPassword"
-            android:background="@color/white"
             android:layout_marginBottom="5sp"
-            android:layout_below="@id/etEmail"
             android:layout_width="300sp"
-            android:layout_height="50sp"
-            android:layout_centerHorizontal="true"/>
+            android:layout_height="50sp"/>
 
         <EditText
             android:id="@+id/etOpenAccBal"
-            android:hint="Add Money"
-            android:background="@color/white"
+            android:hint="Initial Deposit"
             android:layout_marginBottom="5sp"
             android:inputType="number"
-            android:layout_below="@id/etPass"
             android:layout_width="300sp"
-            android:layout_height="50sp"
-            android:layout_centerHorizontal="true"/>
+            android:layout_height="50sp"/>
 
         <Button
             android:id="@+id/btnSignup"
-            android:layout_below="@id/etOpenAccBal"
             android:text="Signup"
             android:layout_width="300sp"
             android:layout_height="50sp"
-            android:layout_centerHorizontal="true"/>
+            android:backgroundTint="#415a77"/>
 
-    </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="\u00A9 SwiftCash 2024"
+        android:layout_marginBottom="10sp"/>
 
 </RelativeLayout>

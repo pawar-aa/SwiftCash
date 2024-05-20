@@ -35,18 +35,18 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Please enter email and password", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
-
-            FirebaseAuth.getInstance().signInWithEmailAndPassword(email, password)
-                .addOnCompleteListener { task ->
-                    if (task.isSuccessful) {
-                        Toast.makeText(this, "Login Success", Toast.LENGTH_LONG).show()
-                        startActivity(Intent(this, UserActivity::class.java))
-                    } else {
-                        Toast.makeText(this, "Login Failed", Toast.LENGTH_LONG).show()
-                        Log.e("Login", "signInWithEmailAndPassword:failure", task.exception)
-                    }
-                }
         }
+
+//        FirebaseAuth.getInstance().signInWithEmailAndPassword("aashay@sc.com", "aashay")
+//            .addOnCompleteListener { task ->
+//                if (task.isSuccessful) {
+//                    Toast.makeText(this, "Login Success", Toast.LENGTH_LONG).show()
+//                    startActivity(Intent(this, UserActivity::class.java))
+//                } else {
+//                    Toast.makeText(this, "Login Failed", Toast.LENGTH_LONG).show()
+//                    Log.e("Login", "signInWithEmailAndPassword:failure", task.exception)
+//                }
+//            }
 
     }
 }

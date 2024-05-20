@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import com.example.swiftcash.R
@@ -22,7 +23,7 @@ class SendActivity : AppCompatActivity() {
         val selectedEmail = intent.getStringExtra("selectedEmail")
         val sendUserTv = findViewById<TextView>(R.id.sendUser)
         val mSendAmt = findViewById<EditText>(R.id.sendAmount)
-        val msendBtn = findViewById<Button>(R.id.sendButton)
+        val msendBtn = findViewById<ImageView>(R.id.sendButton)
 
         msendBtn.setOnClickListener {
             val userEmail = FirebaseAuth.getInstance().currentUser?.email
